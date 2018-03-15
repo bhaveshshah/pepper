@@ -1,0 +1,92 @@
+p {
+    color: #9f9f9f;
+}
+
+h2 {
+    color: #84817a;
+}
+
+ul.tabs {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+}
+
+ul.tabs li {
+    float: left;
+    margin: 0;
+    padding: 0px 21px;
+    height: 40px;
+    line-height: 36px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 1px;
+    cursor: pointer;
+    background-color: #dcdde1;
+    color: #84817a;
+    font-weight: bolder;
+}
+
+ul.tabs li:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+ul.tabs li.active {
+    display: block;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    color: #9f9f9f;
+}
+
+.tab-container {
+    float: left;
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+.tab-body {
+    padding: 5px;
+    display: none;
+}
+
+.tab-heading {
+    display: none;
+}
+
+@media screen and (max-width: 786px) {
+    .tabs {
+        display: none;
+    }
+    .tab-heading {
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        padding: 5px 20px;
+        user-select: none;
+        font-weight: bold;
+        margin-bottom: 3px;
+        background-color: #d1d8e0;
+        color: #84817a;
+        
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    .tab-active {
+        background-color: white;
+        color: #9f9f9f;
+    }
+
+    h3.tab-heading.tab-active:hover {
+        background-color: #d1d8e0;
+    }
+}
